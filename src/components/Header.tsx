@@ -30,7 +30,7 @@ const SearchBarBlock = styled.div`
     border-radius: 25px;
 
     .searchIconContainer{
-        margin: 0 10px;
+        margin: 0 10px 0 15px;
     }
 `;
 
@@ -61,13 +61,14 @@ const HeaderActionsWrapper = styled.div`
     margin: 10px;
     display: flex;
     align-items: center;
-    `;
+`;
 
 const ThemeSwitchContainer = styled.div`
     display: flex;
     background-color: #1c1c1e;
     border-radius: 50%;
     padding: 15px;
+    cursor: pointer;
     img{
         width: 25px;
     }
