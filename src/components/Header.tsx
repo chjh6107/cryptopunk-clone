@@ -4,6 +4,7 @@ import searchIcon from "../assets/images/header/search-icon.png";
 import themeSwitchIcon from "../assets/images/header/theme-switch-icon.png";
 
 const HeaderBlock = styled.div`
+    color: white;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -68,11 +69,24 @@ const ThemeSwitchContainer = styled.div`
     background-color: #1c1c1e;
     border-radius: 50%;
     padding: 15px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
     cursor: pointer;
     img{
         width: 25px;
     }
-`
+`;
+
+const LoginButtonWrapper = styled.div`
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #59f9b7, #66feea);
+    color: black;
+    cursor: pointer;
+`;
+
 const Header = () =>{
     return (
         <HeaderBlock>
@@ -83,7 +97,7 @@ const Header = () =>{
                 <div className="searchIconContainer">
                     <SearchIconBlock src={searchIcon}/>
                 </div>
-                <SearchInputBlock placeholder="Collection, item or user."/>
+                <SearchInputBlock placeholder="Collection, item or user..."/>
             </SearchBarBlock>
             <HeaderItemsWrapper>
                 <p>Drops</p>
@@ -96,6 +110,10 @@ const Header = () =>{
                     <img src={themeSwitchIcon}/>
                 </ThemeSwitchContainer>
             </HeaderActionsWrapper>
+
+            <LoginButtonWrapper>
+                GET IN
+            </LoginButtonWrapper>
         </HeaderBlock>
     );
 }

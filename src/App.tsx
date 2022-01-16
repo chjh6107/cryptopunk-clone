@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Header from './components/Header'
 //https://youtu.be/hhZtiytNaBQ
-//header 1:02:33
+//header 1:15:00
 
 const GlobalStyle = styled.div`
     background-color: #000;
