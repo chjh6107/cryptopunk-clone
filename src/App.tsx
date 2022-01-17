@@ -15,7 +15,7 @@ const App = () => {
     return (
         <GlobalStyle>
             <Header/>
-            <CollectionCard id={0} name={'GET IN'} traits={[{'value':7}]} image="src/assets/punk/1.jpg"/>
+            <CollectionCard id={0} name={'GET IN'} traits={[{'value':7}]} image="/src/assets/punk/1.jpg"/>
         </GlobalStyle>
     )
 }
