@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import punkLogo from "../assets/images/header/punkLogo.png";
-import searchIcon from "../assets/images/header/search-icon.png";
-import themeSwitchIcon from "../assets/images/header/theme-switch-icon.png";
+import punkLogo from "../assets/header/punkLogo.png";
+import searchIcon from "../assets/header/search-icon.png";
+import themeSwitchIcon from "../assets/header/theme-switch-icon.png";
 
 const HeaderBlock = styled.div`
     color: white;
@@ -10,10 +10,6 @@ const HeaderBlock = styled.div`
     justify-content: space-between;
     align-items: center;
 `;
-
-// const LogoContainerBlock = styled.div`
-    
-// `;
 
 const PunkLogoBlock = styled.img`
     width: 100px;

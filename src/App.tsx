@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import CollectionCard from './components/CollectionCard';
 import Header from './components/Header'
 //https://youtu.be/hhZtiytNaBQ
 //header 1:15:00
@@ -14,6 +15,7 @@ const App = () => {
     return (
         <GlobalStyle>
             <Header/>
+            <CollectionCard id={0} name={'GET IN'} traits={[{'value':7}]} image="/src/assets/punk/1.jpg"/>
         </GlobalStyle>
     )
 }
