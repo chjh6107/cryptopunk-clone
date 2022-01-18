@@ -21,11 +21,8 @@ const App = () => {
     useEffect(() => {
         const getMyNfts = async () => {
             const openseaData = await axios.get(
-                "https://testnets-api.opensea.io/assets?asset_contract_address=0xf1C53f1845906a942E6F22a745A5cD75F515dD59&order_direction=asc"
-            ,(req, res)=>{
-                res.header("Access-Control-Allow-Origin","*");
-                
-            });
+                "/assets?asset_contract_address=0xf1C53f1845906a942E6F22a745A5cD75F515dD59&order_direction=asc"
+            );
             setPunkListData(openseaData.data.assets);
             console.log(punkListData);
         };
