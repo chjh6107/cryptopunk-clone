@@ -1,7 +1,6 @@
 {
   "name": "cryptopunk-clone",
   "version": "0.0.0",
-  "proxy": "https://testnets-api.opensea.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
