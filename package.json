@@ -20,6 +20,5 @@
     "babel-plugin-styled-components": "^2.0.2",
     "typescript": "^4.4.4",
     "vite": "^2.7.2"
-  },
-  "proxy":"https://enable-cors.org/"
+  }
 }
