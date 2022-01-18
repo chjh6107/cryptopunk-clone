@@ -57,7 +57,7 @@ const CollectionCard = ({id, name, traits, image}:CollectionCardProps) =>{
             <img src={image} alt={name}/>
             <DetailsBlock>
                 <NameBlock>
-                    {name}<IdBlock> ·#0 </IdBlock>
+                    {name}<IdBlock> ·#{id} </IdBlock>
                 </NameBlock>
                 <PriceContainer>
                     <WethImage src={weth} alt=""/>
