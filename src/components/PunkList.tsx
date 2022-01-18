@@ -11,7 +11,7 @@ const PunkList = ({punkListData}:any) => {
     return(
         <PunkListBlock>
             {punkListData.map((punk:any)=>(
-                <div>
+                <div key={punk.token_id}>
                     <CollectionCard 
                         key={punk.token_id}
                         id={punk.token_id}

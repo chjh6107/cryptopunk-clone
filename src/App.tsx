@@ -19,12 +19,13 @@ const App = () => {
     const [punkListData, setPunkListData] = useState([]);
 
     useEffect(() => {
-        const getMyNfts =async () => {
-            const openseaData = await axios.get('https://testnets-api.opensea.io/assets?asset_contract_address=0xf1C53f1845906a942E6F22a745A5cD75F515dD59&order_direction=asc');
-            // console.log(openseaData.data.assets);
+        const getMyNfts = async () => {
+            const openseaData = await axios.get(
+                "https://testnets-api.opensea.io/assets?asset_contract_address=0xf1C53f1845906a942E6F22a745A5cD75F515dD59&order_direction=asc"
+            );
             setPunkListData(openseaData.data.assets);
             console.log(punkListData);
-        }
+        };
         getMyNfts();
     }, []);
     
