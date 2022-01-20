@@ -1,18 +1,24 @@
-import React from 'react'
-import styled from 'styled-components';
-import CollectionCard from './CollectionCard';
+import { DocumentData } from "firebase/firestore";
+import styled from "styled-components";
+import CollectionCard from "./CollectionCard";
 
 const PunkListBlock = styled.div`
     display: flex;
     overflow: scroll;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 `;
 
-const PunkList = ({punkListData}:any) => {
-    return(
+const PunkList = ({ punkListData }: DocumentData) => {
+    return (
         <PunkListBlock>
-            {punkListData.map((punk:any)=>(
+            {punkListData.map((punk: DocumentData) => (
                 <div key={punk.token_id}>
-                    <CollectionCard 
+                    <CollectionCard
                         key={punk.token_id}
                         id={punk.token_id}
                         name={punk.name}
@@ -23,6 +29,6 @@ const PunkList = ({punkListData}:any) => {
             ))}
         </PunkListBlock>
     );
-}
+};
 
 export default PunkList;

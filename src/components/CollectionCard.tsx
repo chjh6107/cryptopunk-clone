@@ -9,7 +9,8 @@ const CollectionCardBlock = styled.div`
     width: 300px;
     height: 500px;
     margin-right: 30px;
-    >img{
+    cursor: pointer;
+    > img {
         width: 100%;
     }
 `;
@@ -51,16 +52,17 @@ type CollectionCardProps = {
     traits: any;
     image: string;
 };
-const CollectionCard = ({id, name, traits, image}:CollectionCardProps) =>{
+const CollectionCard = ({ id, name, traits, image }: CollectionCardProps) => {
     return (
         <CollectionCardBlock>
-            <img src={image} alt={name}/>
+            <img src={image} alt={name} />
             <DetailsBlock>
                 <NameBlock>
-                    {name}<IdBlock> ·#{id} </IdBlock>
+                    {name}
+                    <IdBlock> ·#{id} </IdBlock>
                 </NameBlock>
                 <PriceContainer>
-                    <WethImage src={weth} alt=""/>
+                    <WethImage src={weth} alt="" />
                     <PriceBlock>{traits[0]?.value}</PriceBlock>
                 </PriceContainer>
             </DetailsBlock>
