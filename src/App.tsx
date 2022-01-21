@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
-import {
-  collection,
-  DocumentData,
-  getDocs,
-  getFirestore,
-} from "firebase/firestore";
+import { collection, DocumentData, getDocs, getFirestore } from "firebase/firestore";
 import Header from "./components/Header";
 import PunkList from "./components/PunkList";
 import firebaseInit from "./firebaseInit";
